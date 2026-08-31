@@ -1,0 +1,35 @@
+{
+  "name": "rag-chatbot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prototype RAG chatbot: Next.js + Vercel AI SDK + Azure OpenAI + pgvector",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "db:init": "tsx scripts/init-db.ts",
+    "ingest": "tsx scripts/ingest.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/azure": "^4.0.53",
+    "@ai-sdk/react": "^4.0.87",
+    "ai": "^7.0.84",
+    "next": "^16.3.3",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.13.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.9",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

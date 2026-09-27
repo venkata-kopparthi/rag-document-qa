@@ -5,6 +5,8 @@ A Retrieval-Augmented Generation (RAG) document Q&A application built with Next.
 The application combines **Next.js 16, React 19, TypeScript, Vercel AI SDK, Azure OpenAI, PostgreSQL, and pgvector**. Documents are parsed into text chunks, converted into embeddings, stored in PostgreSQL, and retrieved with cosine similarity before the LLM generates a streaming answer with source references.
 
 > **Portfolio note:** This project is intentionally scoped as a working prototype. It demonstrates the core RAG pipeline and identifies production hardening areas such as authentication, rate limiting, chat persistence, and re-ranking.
+>
+> This is a personal project built independently to demonstrate RAG architecture. It does not contain code from any employer.
 
 ## Demo
 
